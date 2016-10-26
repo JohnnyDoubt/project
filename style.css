@@ -1,0 +1,416 @@
+/* Eléments principaux de la page */
+
+
+
+section h1, footer h1, nav a
+{
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/* Header */
+
+header
+{
+  width: auto;
+  
+}
+
+#titre_principal
+{
+  float: inherit;
+  position: relative;
+  margin: auto;
+
+}
+
+#logo
+{
+  display: block;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+#logo img
+{
+  display: block;
+margin: auto;
+  width: 180px;
+  height: 180px;
+}
+
+header h1
+{
+  display: block;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 3em;
+  font-weight: strong;
+  margin: auto;
+  margin-left: calc(100vh-100px);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  font-family: 'Alfa Slab One';
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Navigation */
+
+nav ul
+{
+  list-style-type: none;
+  width: auto;
+  display:inline-flex;
+  margin: 0 auto;
+}
+
+nav li
+{
+  margin-right: 15px;
+}
+
+nav a
+{
+  font-size: 1.3em;
+  color: #181818;
+  padding-bottom: 3px;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+}
+
+nav a:hover
+{
+  color: #760001;
+  border-bottom: 3px solid #760001;
+}
+
+nav p {
+  text-align: center;
+}
+
+/* Corps */
+
+section {
+  display: inline-block;
+  width: 100%;
+}
+
+.streaming {
+  max-width: 100%;
+}
+
+
+div#colonne1 {
+  float: left;
+  width: 35%;
+  background : #b0b0b7;
+  margin: auto;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color:white;
+  border-radius:10px;
+  padding: 10px;
+
+}
+
+#colonne1 h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.lien_hot {
+  color: white;
+  text-decoration: none;
+}
+
+.lien_hot:hover {
+  color: #760001;
+  text-decoration: underline;
+}
+
+
+div#centre {
+  display: block;
+  width: 65%;
+  margin:0 auto;
+  margin-top: 0;
+
+}
+
+.titre {
+  margin-bottom: -18px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+}
+
+.lien_article {
+  color:#505b5e;
+  margin-bottom: -22px;
+  text-decoration: none;
+}
+.lien_article:hover {
+  color: #760001;
+  text-decoration: underline;
+}
+
+.concerts {
+  border: 2px inset blue;
+  border-radius: 10px;
+  padding: 5px;
+  border-color: #90adb2;
+  width:65%;
+  margin-left: auto;
+  font-family: 'Oswald', sans-serif;
+
+
+}
+.sorties {
+  border: 2px inset blue;
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: auto;
+  border-color: #90adb2;
+  width:65%;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+.style {
+  font-size: 16px;
+  color: #4e608e;
+  margin-bottom: -22px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.style:hover {
+  color: #760001;
+}
+
+.pochettes {
+  float: right;
+  display: block;
+  margin: auto;
+  
+  }
+
+.ico_categorie1
+{
+  float: right;
+  padding: 5px;
+  border-radius: 50px;
+  margin-top: -30px
+}
+.ico_categorie2
+{
+  float: right;
+  padding: 2px;
+  border:2px solid #90adb2;
+  border-radius: 50px;
+  margin-top: -10px;
+  margin-right: 5px;
+  background-color: white;
+}
+
+
+
+/* Footer */
+
+footer
+{
+  width: auto;
+  padding-top: 25px;
+  background : #b0b0b7;
+  border-radius: 10px;
+  margin:auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 7px;
+}
+
+.lien_news {
+  text-align: justify;
+  color:white;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Oswald', sans-serif;
+  padding: 5px;
+}
+.lien_news:hover {
+  color: #760001;
+  text-decoration: underline;
+}
+
+#nous
+{
+  float: left;
+  width: 20%;
+  padding : 20px;
+  margin: auto;
+  color: white;
+  font-size: 16px;
+
+}
+
+#copyright
+{
+  width: 30%;
+  padding : 20px;
+  margin: auto;
+  color: white;
+  text-align: left;
+  font-size: 16px;
+}
+
+#contact
+{
+  float: right;
+  width: 20%;
+  padding : 20px;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
+.lien_contact {
+  color:white;
+  text-decoration: none;
+}
+
+.lien_contact:hover {
+  color: #760001;
+  text-decoration: underline;
+}
+
+
+
+
+/* MOBILE*/
+
+@media (max-width: 600px)
+{
+
+ 
+  
+  div#centre {
+    width: auto;
+    
+}
+  .concerts {
+    margin-top: 30px;
+    border: 2px inset blue;
+    border-radius: 10px;
+    padding: 5px;
+    border-color: #90adb2;
+    width:auto;
+    margin-left: auto;
+    font-family: 'Oswald', sans-serif;
+
+
+  }
+  .sorties {
+    border: 2px inset blue;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: auto;
+    border-color: #90adb2;
+    width:auto;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .pochettes {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 0em;
+    
+  }
+
+
+  logo
+  {
+    width: auto;
+  }
+
+  .text {
+    font-size: 10px;
+  }
+
+  div#colonne1 {
+    position: relative;
+    float:none;
+    width: auto;
+  }
+  
+  header {
+    white-space: normal;
+  }
+
+  div#logo {
+    width: 80px;
+  }
+  
+ li {
+    position: relative;
+    max-width: 100%;
+  }
+  
+  .slideshow-container {
+    position: relative;
+  }
+  
+  body
+  {
+    max-width: 100%;
+  }
+  
+}
+  
+}
+
+  

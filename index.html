@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="style.css" />
+    <title>..::NewZik::.. Toute l'actu musicale !</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+ 
+  </head>
+
+  <body>
+
+    <header>
+      <div id="titre_principal">
+        <div id="logo">
+          <img src="https://pbs.twimg.com/profile_images/1707107661/NZLetterLogo.jpg" alt="Logo site" />
+             
+        </div>
+      </div>
+
+      <h1>NewZik</h1>
+      
+      <nav>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Rock</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Hip Hop</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Electro</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Pop/Indie</a></li>
+        </ul>
+        
+        <p>
+          <a href="https://www.facebook.com/">
+            <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook" height="40px" width= "40px" /></a>
+          
+          <a href="https://twitter.com/?lang=fr">  <img src="http://www.vanderbilt.edu/recreationandwellnesscenter/wellness/wp-content/uploads/Twitter-logo2.png" alt="Twitter" height="40px" width= "40px" /></a>
+
+          <a href="http://www.vimeo.com">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Vimeo.svg/2000px-Vimeo.svg.png" alt="Vimeo" height="40px" width= "40px" />
+          </a>
+          
+          <a href="http://www.flickr.com">
+            <img src="http://shawnwheeler.name/images/logo-flickr.jpg" alt="Flickr" height="40px" width= "40px" />
+          </a>
+          
+          <a href="https://en.wikipedia.org/wiki/RSS">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Feed-icon.svg/128px-Feed-icon.svg.png" alt="RSS" height="40px" width= "40px"/>
+          </a>
+        </p>
+
+      </nav>
+
+    </header>
+
+    <section>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="http://www.billboard.com/files/styles/article_main_image/public/media/Adele-2015-close-up-XL_Columbia-billboard-650.jpg" style="width:100%">
+          <div class="text" style= color:#d6b8b2;>L'interview exclusive d'Adele <a href="http://www.google.com" style= color:green;>ICI</a>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="http://ufvcascade.ca/wp-content/uploads/2015/09/Keith-Richards-2014.jpg" style="width:100%">
+          <div class="text" style= color:color:#d6b8b2;><a href="http://www.google.com" style= color:green;>KEITH RICHARDS</a> "La drogue c'est terminé"</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="https://musicandcopyright.files.wordpress.com/2011/12/live.jpg" style="width:100%">
+          <div class="text" style= color:color:#d6b8b2;>Toutes nos review concert, c'est <a href="http://www.google.com" style= color:green;>LA</a></div>
+        </div>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+
+      <script>
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex> slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+      </script>
+
+      <!--COLONNE HOT-->   
+
+      <div id="colonne1">
+        <h1>HOT</h1>
+        <p><a href="#" class="lien_hot">TOP 10 des clips à             voir cette semaine</a></p>
+        <iframe width="200" height="150" src="https://www.youtube.com/embed/UqyT8IEBkvY" frameborder="0" allowfullscreen></iframe>
+        <iframe width="200" height="150" src="https://www.youtube.com/embed/GKSRyLdjsPA" frameborder="0" allowfullscreen></iframe>
+        <iframe width="200" height="150" src="https://www.youtube.com/embed/BinwuzZVjnE" frameborder="0" allowfullscreen></iframe>
+        <iframe width="200" height="150" src="https://www.youtube.com/embed/34Na4j8AVgA" frameborder="0" allowfullscreen></iframe>
+
+        <p><a href="#" class="lien_hot">Top 5 des artistes à découvrir</a></p>
+        <p><a href="#" class="lien_hot">Top 10 des sites  incontournables pour découvrir de la bonne</a></p>
+        <p>Top 3 des meilleurs sites pour écouter de la musique gratuitement</p>
+
+        <p class="streaming">
+
+          <a href="https://www.deezer.com//">
+            <img  src="https://upload.wikimedia.org/wikipedia/fr/thumb/0/00/Deezer_logo.png/220px-Deezer_logo.png" alt="Deezer" height="100px" max-width= "100%" >
+          </a><br>
+
+          <a href="https://www.spotify.com/fr/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/langfr-220px-Spotify_logo_with_text.svg.png" alt="Spotify" height="70px" max-width= "100%"/>
+          </a><br>
+
+          <a href="http://fr.napster.com/">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e6/Napster_corporate_logo.svg/220px-Napster_corporate_logo.svg.png" alt="Napster" height="60px" max-width= "100%" margin-top="10px"/>
+          </a>
+
+        </p>
+
+      </div>
+
+      <!--COLONNE CONCERTS & SORTIES-->
+      <div id="centre">
+
+        <article class="article">
+
+          <h1><img src="http://cdn.digital-photo-secrets.com/images/concert-two-performers.jpg" height="60" width="100" alt="Logo concerts" class="ico_categorie1" />     
+          </h1>
+
+
+          <div class="concerts">
+
+
+            <h2 class="titre"><a href="#" class="lien_article">Concerts</a></h2><br/>
+            <p>
+              lun. 17 oct.- FEU!CHATTERTON <br/>
+              mar. 18 oct. - JAMES VINCENT MCMORROW<br/> 
+              ven. 21 oct. - PJ HARVEY - Caen <br/>
+              mer. 16 nov. - WILCO - Paris <br/>
+              lun. 17 oct. - DAUGHTER <br/>
+              mar. 8 nov. - MØ <br/>
+              lun. 12 déc. - ROVER <br/>
+              lun. 28 nov. - M83 - Paris
+            </p>
+          </div>
+
+          <h1><img src="http://a137.idata.over-blog.com/600x331/3/64/12/75/Guitare-electrique-RICHMOND-Belmont-Burgundy-Hi-Gloss.jpg" height="60" width="100" alt="Logo sorties" class="ico_categorie2" /></h1>
+
+          <div class="sorties">
+            <h2 class="titre">
+              <a href="#"class="lien_article">Sorties</a>             </h2><br/>
+
+            <h4 class="style">Indie, Pop, Electro-pop,                    folk....</h4><br/>
+            <p class="pochettes">
+
+              <img src="http://thelemontwigs.com/wp-content/themes/dohollywood/images/packshot.jpg" title="The LEMON TWIGS - Do Hollywood" width="130px"/>
+              <br/>
+              <img src="http://pitchfork-cdn.s3.amazonaws.com/content/devendra-banhart-ape-in-pink-marble-1000sq_1_3.jpg" title="DEVENDRA BANHART - Ape in Pink Marble" width="130px" />
+              <br/>
+              <img src="https://www.piccadillyrecords.com/imgrec/sl-110531.jpg" title="PATTEN - Ψ" width="130px" />
+              <br/>
+              <img src="https://upload.wikimedia.org/wikipedia/en/6/66/22,_A_Million_cover.jpg" title="BON IVER - 22, A Million" width="130px" />
+              <br/>
+              <img src="http://www.iamroosevelt.com/assets/cover_500x2.jpg" title="ROOSEVELT - Roosvelt" width="130px" />
+              <br/>
+              <img src="https://www.stonesthrow.com/images/2016/Samiyam-Animals-Have-Feelings.jpg" title="SAMIYAM - Animals Have Feelings" width="130px" />
+              <br/>
+            </p>
+            <p>Benoît Pioulard - The Benoît Pioulard<br/>
+              Douglas Dare - Aforger <br/>
+              Jagwar Ma - Every Now & Then <br/>
+              Rats On Rafts - De Kift <br/>
+              The Lemon Twigs - Do Hollywood<br/>
+              The Notwist - Superheroes, Ghostvillains + Stuff<br/>
+              Conor Oberst - Ruminations<br/>
+              La Souterraine - Folk <br/>   
+              Kings of Leon - WALLS<br/>
+              Katie Melua - In Winter<br/>
+              Sleaford Mods - TCR<br/>
+              Various Artists - Say Yes! A Tribute<br/>
+              Ablebody - Adult Contemporaries<br/>
+              Black Marble – It’s Immaterial <br/>
+            </p>
+
+            <h4 class="style">     
+              Rock, Punk, Garage, Noise...</h4><br/>
+            <p>Trupa Trupa - Headache<br/>
+              Mono - Requiem For Hell <br/>
+              Duchess Says - Sciences Nouvelles <br/></p>
+
+            <h4 class="style"> 
+              Expé, Ambient, néo-classique...</h4><br/>
+            <p>Aidan Baker / N / Dirk Serries - Enomeni<br/>
+              Oval - Popp <br/>
+              The Orb - COW/Chill Out, World<br/>
+              Katie Gately - Color<br/>
+              Kuedo - Slow Knife <br/>
+              Dead Light - Dead Light<br/>
+            </p>
+
+            <h4 class="style"> Electro, house, tronica,                 techno...</h4><br/>
+            <p>Isan - Glass Bird Movement <br/>
+              Wax Tailor - By Any Beats Necessary<br/>
+              Powell – Sport<br/>
+              Pangaea - In Drum Play <br/>
+              Youandewan - There Is No Right Time<br/>
+            </p> 
+
+
+            <h4 class="style">Rap, Hip hop, Abstract,                   R'n'b...</h4><br/>
+            <p> Swet Shop Boys - Cashmere<br/> 
+              L'Orange & Mr. Lif - The Life & Death of                 Scenery<br/> 
+              The Game - 1992<br/>
+
+            </p>
+
+          </div>
+
+        </article>
+      </div>
+
+    </section>
+
+    <!--PIED DE PAGE-->
+
+    <footer>
+
+      <h1 id="nous"><a href="#" class="lien_contact">Qui sommes nous ?</a></h1>
+
+      <h1 id="contact"><a href="mailto:camille.francia@hotmail.fr" class="lien_contact">Contact</a></h1>
+
+
+      <h1 id="copyright">Copyright - All rights reserved ©</h1>
+
+      <p><a href="#" class="lien_news">Frank Ocean ne remportera pas de Grammy en 2017</a>
+        <a href="#" class="lien_news">Alex Cameron, génie oublié de l’année 2016</a>
+        <a href="#" class="lien_news">Notre album de la semaine : Lafayette, marquis de la nouvelle pop française</a>
+
+        <a href="#" class="lien_news">James Vincent McMorrow renaît par le r’n’b, et c’est magnifique</a>
+        <a href="#" class="lien_news">Prix Ricard S.A Live Music 2017 : c’est parti !</a>
+        <a href="#" class="lien_news">Depeche Mode sera bientôt de retour en France avec trois concerts</a>
+        <a href="#" class="lien_news">Poursuivi par le fantôme d’Amélie, Yann Tiersen reste un fabuleux compositeur des sentiments</a>
+        <a href="#" class="lien_news">Label à suivre : Secret City Records</a>
+        <a href="#" class="lien_news">Le label de Jack White vient de sortir un livre de coloriage</a>
+        <a href="#" class="lien_news">De Tom Waits à Mick Jagger, les réactions de musiciens au Nobel de Bob Dylan</a>
+        <a href="#" class="lien_news">Kery James, l’interview : “Celui qui aime la France ne peut pas tenir un discours de division”</a><br>
+
+
+      </p>
+    </footer>
+
+  </body>
+</html>
